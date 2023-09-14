@@ -205,6 +205,12 @@
     font-family: var(--font-main);
 }
 
+.trend-head {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-xl);
+    font-family: var(--font-main);
+}
+
 .discount {
     font-size: var(--fs-lg);
     font-weight: var(--fw-sm);
@@ -258,6 +264,21 @@
     box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
 }
 
+.trending-card {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.10);
+}
+
+.trending-inner-pading {
+    padding: 31px 19px 41px 18px;
+}
+
+
+.w-373 {
+    max-width: 373px;
+}
+
 .bg-explore {
     background-image: url(../images/section-main.png);
     background-repeat: no-repeat;
@@ -269,8 +290,20 @@
     padding-top: 95px;
 }
 
+.mt-60 {
+    margin-top: 60px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
 .mt-89 {
     margin-top: 89px;
+}
+
+.line-200 {
+    line-height: 200%;
 }
 
 .gap-64 {
@@ -279,6 +312,10 @@
 
 .explore-space {
     padding: 50px;
+}
+
+.trending-radius {
+    border-radius: 10px;
 }
 
 .gap-14 {
