@@ -115,6 +115,10 @@
     color: var(--color-white);
 }
 
+.bg-blakis {
+    background-color: var(--color-main);
+}
+
 /* font-family */
 .font-main {
     font-family: var(--font-main);
@@ -168,6 +172,12 @@
 .main-head {
     font-size: var(--fs-5xl);
     font-weight: var(--fw-lg);
+    font-family: var(--font-main);
+}
+
+.main-head-two {
+    font-size: var(--fs-5xl);
+    font-weight: var(--fw-xl);
     font-family: var(--font-main);
 }
 
@@ -334,6 +344,20 @@
     border: none;
 }
 
+.organic-card {
+    padding: 76px 27px;
+    border-radius: 30px;
+    background: #F3F5F6;
+}
+
+.towell-radius {
+    border-radius: 30px;
+}
+
+.w-457 {
+    max-width: none;
+}
+
 .custum-widthimg {
     max-height: 199px;
 }
@@ -473,5 +497,9 @@
 
     .explore-space {
         padding: 0;
+    }
+
+    .w-457 {
+        max-width: 457px;
     }
 }
