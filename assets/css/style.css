@@ -152,6 +152,12 @@
     font-family: var(--font-primary);
 }
 
+.short-line {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-sm);
+    font-family: var(--font-primary);
+}
+
 .head-one {
     font-size: var(--fs-4xl);
     font-weight: var(--fw-lg);
@@ -227,6 +233,10 @@
 }
 
 /* padding gap margin */
+.pt-95 {
+    padding-top: 95px;
+}
+
 .gap-64 {
     gap: 10px;
 }
