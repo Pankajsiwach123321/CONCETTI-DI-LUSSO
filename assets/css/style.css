@@ -9,13 +9,13 @@
 }
 
 :root {
-    --fs-sm: 14px;
+    --fs-sm: 10px;
     --fs-md: 15px;
     --fs-lg: 16px;
     --fs-xl: 17px;
     --fs-2xl: 18px;
     --fs-3xl: 24px;
-    --fs-4xl: 30px;
+    --fs-4xl: 28px;
     --fs-5xl: 36px;
     --fs-6xl: 58px;
     --fs-7xl: 64px;
@@ -52,6 +52,30 @@
     font-size: var(--fs-xl);
 }
 
+.fs-2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs-3xl {
+    font-size: var(--fs-3xl);
+}
+
+.fs-4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs-5xl {
+    font-size: var(--fs-5xl);
+}
+
+.fs-6xl {
+    font-size: var(--fs-6xl);
+}
+
+.fs-7xl {
+    font-size: var(--fs-7xl);
+}
+
 /* font weight class */
 .fw-sm {
     font-weight: var(--fw-sm);
@@ -74,6 +98,10 @@
     color: var(--color-main);
 }
 
+.color-attract {
+    color: var(--color-attract);
+}
+
 .color-primary {
     color: var(--color-primary);
 }
@@ -93,9 +121,9 @@
 
 /* ----style-css--- */
 /*---- commun-class--- */
-.container {
+/* .container {
     max-width: 1280px !important;
-}
+} */
 
 .para-one {
     font-size: var(--fs-xl);
@@ -128,8 +156,8 @@
 }
 
 .nav-upper {
-    font-size: var(--fs-2xl);
-    font-weight: var(--fw-lg);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-sm);
     font-family: var(--font-main);
 }
 
@@ -151,3 +179,180 @@
     text-decoration-line: strikethrough;
     font-family: var(--font-main);
 }
+
+.bg-nav {
+    background: #F7F7F7;
+}
+
+.icon-bg {
+    padding: 5px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+}
+
+.sign-in {
+    padding: 10px 32px;
+    border-radius: 5px;
+    background: var(--color-attract);
+    box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
+}
+
+.innerwords {
+    color: var(--color-white);
+    font-family: var(--font-main);
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-lg);
+}
+
+/* padding gap margin */
+.gap-64 {
+    gap: 10px;
+}
+
+.gap-14 {
+    gap: 4px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 12px;
+}
+
+.gap-42 {
+    gap: 30px;
+}
+
+.d-lg {
+    display: none;
+}
+
+.fix1,
+.fix2,
+.fix3 {
+    transition: all 0.5s ease-in-out;
+}
+
+.fixer1 {
+    display: none;
+}
+
+.fixer2 {
+    transform: rotate(48deg) translate(2px, 0px);
+}
+
+.fixer3 {
+    transform: rotate(-45deg) translate(12px, -10px);
+}
+
+.over-flow {
+    overflow-y: hidden;
+}
+
+@media (max-width:1199.05px) {
+    label[id="nav"] {
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 9px;
+        top: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+    }
+
+    label[id="nav"]>span {
+        width: 100%;
+        height: 5px;
+        background-color: var(--color-attract);
+    }
+
+    .menubar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        background-color: #FFF;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s linear;
+    }
+
+    .left-0 {
+        left: 0;
+    }
+
+    .d-lg {
+        display: block;
+    }
+
+    .n-lg {
+        display: none;
+    }
+}
+
+@media (min-width:575.08px) {
+    :root {
+        --fs-sm: 14px;
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 17px;
+        --fs-2xl: 18px;
+        --fs-3xl: 24px;
+        --fs-4xl: 30px;
+        --fs-5xl: 36px;
+        --fs-6xl: 58px;
+        --fs-7xl: 64px;
+        /* font-weight: ; */
+        --fw-sm: 400;
+        --fw-md: 500;
+        --fw-lg: 600;
+        --fw-xl: 700;
+        /* font-family: ; */
+        --font-main: 'Hind Siliguri', sans-serif;
+        --font-primary: 'Open Sans', sans-serif;
+        /* color */
+        --color-main: #232323;
+        --color-attract: #9E3040;
+        --color-primary: #686868;
+        --color-secandary: #303030;
+        --color-white: #ffff;
+    }
+
+    .nav-upper {
+        font-size: var(--fs-sm);
+        font-weight: var(--fw-sm);
+        font-family: var(--font-main);
+    }
+
+    .gap-64 {
+        gap: 64px;
+    }
+
+    .icon-bg {
+        padding: 13px;
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+    }
+
+    .gap-20 {
+        gap: 20px;
+    }
+}
+
+@media (min-width:767.08px) {}
+
+@media (min-width:991.08px) {}
