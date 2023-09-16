@@ -7,7 +7,6 @@
     list-style-type: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* outline: red 2px solid; */
 }
 
 :root {
@@ -19,8 +18,8 @@
     --fs-3xl: 24px;
     --fs-4xl: 28px;
     --fs-5xl: 36px;
-    --fs-6xl: 58px;
-    --fs-7xl: 64px;
+    --fs-6xl: 40px;
+    --fs-7xl: 49px;
     /* font-weight: ; */
     --fw-sm: 400;
     --fw-md: 500;
@@ -140,9 +139,10 @@
 
 /* ----style-css--- */
 /*---- commun-class--- */
-/* .container {
+.container {
     max-width: 1280px !important;
-} */
+}
+
 .text-shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -247,6 +247,7 @@
     padding: 10px 32px;
     border-radius: 5px;
     background: var(--color-attract);
+    border: 2px solid transparent;
     box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
 }
 
@@ -273,6 +274,7 @@
 
 .box-product {
     padding: 23px 14px 32px 14px;
+    height: 100%;
     border-radius: 10px;
     background: #F3F5F6;
     box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.00);
@@ -302,7 +304,6 @@
 /* padding gap margin */
 .pt-section {
     padding-top: 45px;
-    /* padding: on big screen 95; */
 }
 
 .butoon-mt {
@@ -361,14 +362,6 @@
     max-width: 190px;
 }
 
-.w-300 {
-    max-width: none;
-}
-
-.w-457 {
-    max-width: none;
-}
-
 .w-601 {
     max-width: 601px;
 }
@@ -409,7 +402,6 @@
 }
 
 .dropdown-options a {
-    display: block;
     color: var(--color-primary);
     padding: 5px;
     text-decoration: none;
@@ -438,7 +430,7 @@
 }
 
 .subscribe {
-    border: none;
+    border: 1px solid transparent;
     padding: 9px 12px;
     border-radius: 5px;
 }
@@ -458,11 +450,11 @@
 }
 
 .fixer2 {
-    transform: rotate(48deg) translate(2px, 0px);
+    transform: rotate(48deg) translate(3px, -1px);
 }
 
 .fixer3 {
-    transform: rotate(-45deg) translate(12px, -10px);
+    transform: rotate(-45deg) translate(13px, -10px);
 }
 
 .over-flow {
@@ -483,7 +475,7 @@
     padding: 8px 4px;
     border-radius: 5px;
     background: #232323;
-    border: none;
+    border: 1px solid transparent;
 }
 
 .organic-card {
@@ -509,24 +501,31 @@
 
 .show-more {
     padding: 10px 28px;
+    border: 1px solid transparent;
     border-radius: 5px;
     background: var(--color-attract);
     box-shadow: 0px 0px 10px 0px rgba(158, 48, 64, 0.17);
-    border: none;
 }
 
 .testimonials-card {
-
     padding: 24px;
     border-radius: 30px;
     background: var(--color-attract);
 }
 
 .double-comma::after {
+    content: url(../images/ourset-bottom.png);
+    position: absolute;
+    bottom: -88%;
+    right: -9%;
     display: none;
 }
 
 .double-comma::before {
+    content: url(../images/ourset-top.png);
+    position: absolute;
+    top: -65%;
+    left: -17%;
     display: none;
 }
 
@@ -632,15 +631,73 @@ footer ul li a:hover::after {
 }
 
 .hover-stroke:hover {
-    -webkit-text-stroke: 0.5px var(--color-main);
+    -webkit-text-stroke: 0.3px var(--color-main);
     color: var(--color-main);
 }
 
 .upward-img img {
-   transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
+
 .upward-img:hover img {
-    transform: translateY(-20%) 
+    transform: translateY(-20%)
+}
+
+.atract-white {
+    transition: all 0.2s ease-in-out;
+}
+
+.atract-white:hover {
+    color: var(--color-attract);
+    background: var(--color-white);
+    border-color: 2px solid var(--color-attract);
+}
+
+.black-white {
+    transition: all 0.2s ease-in-out;
+}
+
+.black-white:hover {
+    color: var(--color-main);
+    background: var(--color-white);
+    border: 1px solid var(--color-main);
+}
+
+.white-atract {
+    transition: all 0.2s ease-in-out;
+}
+
+.white-atract:hover {
+    color: var(--color-white);
+    background: var(--color-attract);
+}
+
+.white-atract svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+.white-atract:hover svg path {
+    fill: var(--color-white);
+    color: var(--color-white);
+    background: var(--color-attract);
+}
+
+.over-layer {
+    position: absolute;
+    width: 100%;
+    height: 1000%;
+    top: 0;
+    left: -100%;
+    background: #23232377;
+    z-index: 1;
+}
+
+.foom-in {
+    transition: all 0.2s ease-in-out;
+}
+
+.foom-in:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width:1199.05px) {
@@ -650,7 +707,7 @@ footer ul li a:hover::after {
         cursor: pointer;
         position: absolute;
         right: 9px;
-        top: 10px;
+        top: 17px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -662,6 +719,10 @@ footer ul li a:hover::after {
         width: 100%;
         height: 5px;
         background-color: var(--color-attract);
+    }
+
+    .left-corner {
+        left: 9px;
     }
 
     .menubar {
@@ -679,6 +740,7 @@ footer ul li a:hover::after {
         left: -100%;
         opacity: 1;
         transition: all 0.2s linear;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .left-0 {
@@ -701,7 +763,7 @@ footer ul li a:hover::after {
         --fs-lg: 16px;
         --fs-xl: 17px;
         --fs-2xl: 18px;
-        --fs-3xl: 24px;
+        --fs-3xl: 22px;
         --fs-4xl: 30px;
         --fs-5xl: 36px;
         --fs-6xl: 58px;
@@ -734,9 +796,6 @@ footer ul li a:hover::after {
 
     .icon-bg {
         padding: 13px;
-        border-radius: 5px;
-        background: #FFF;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
     }
 
     .gap-sm {
@@ -774,8 +833,6 @@ footer ul li a:hover::after {
 
     .testimonials-card {
         padding: 50px;
-        border-radius: 30px;
-        background: var(--color-attract);
     }
 
     .line-200-custum {
@@ -784,15 +841,55 @@ footer ul li a:hover::after {
 
     .mail-iner {
         padding: 13px 56px 12px 23px;
-        border-radius: 5px;
-        border: 1px solid rgba(158, 48, 64, 0.30) !important;
-        background: #FFF;
     }
 
     .subscribe {
-        border: none;
         padding: 10px 37px;
-        border-radius: 5px;
+    }
+
+    .d-grid {
+        gap: 30px;
+    }
+}
+
+@media (min-width:767.08px) {
+    :root {
+        --fs-sm: 14px;
+        --fs-md: 15px;
+        --fs-lg: 16px;
+        --fs-xl: 17px;
+        --fs-2xl: 18px;
+        --fs-3xl: 24px;
+        --fs-4xl: 30px;
+        --fs-5xl: 36px;
+        --fs-6xl: 58px;
+        --fs-7xl: 64px;
+        /* font-weight: ; */
+        --fw-sm: 400;
+        --fw-md: 500;
+        --fw-lg: 600;
+        --fw-xl: 700;
+        /* font-family: ; */
+        --font-main: 'Hind Siliguri', sans-serif;
+        --font-primary: 'Open Sans', sans-serif;
+        /* color */
+        --color-main: #232323;
+        --color-attract: #9E3040;
+        --color-primary: #686868;
+        --color-secandary: #303030;
+        --color-white: #ffff;
+    }
+
+    .w-300 {
+        max-width: 300px;
+    }
+
+    .cart {
+        padding: 8px 31px;
+    }
+
+    .mail-iner {
+        padding: 13px 287px 12px 23px;
     }
 
     .pt-section {
@@ -803,13 +900,6 @@ footer ul li a:hover::after {
         margin-top: 89px;
     }
 
-    .d-grid {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-        gap: 30px;
-    }
-
     .mt-large {
         margin-top: 100px;
     }
@@ -818,26 +908,7 @@ footer ul li a:hover::after {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-}
 
-@media (min-width:767.08px) {
-    .w-300 {
-        max-width: 300px;
-    }
-
-    .cart {
-        padding: 8px 31px;
-        border-radius: 5px;
-        background: #232323;
-        border: none;
-    }
-
-    .mail-iner {
-        padding: 13px 287px 12px 23px;
-        border-radius: 5px;
-        border: 1px solid rgba(158, 48, 64, 0.30) !important;
-        background: #FFF;
-    }
 
 }
 
@@ -868,25 +939,15 @@ footer ul li a:hover::after {
     }
 
     .double-comma::after {
-        content: url(../images/ourset-bottom.png);
-        position: absolute;
-        bottom: -88%;
-        right: -9%;
         display: block;
     }
 
     .double-comma::before {
-        content: url(../images/ourset-top.png);
-        position: absolute;
-        top: -65%;
-        left: -17%;
         display: block;
     }
 
     .testimonials-card {
         padding: 100px 81px 59px 180px;
-        border-radius: 30px;
-        background: var(--color-attract);
     }
 }
 
