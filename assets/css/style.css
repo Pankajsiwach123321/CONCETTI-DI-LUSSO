@@ -26,8 +26,8 @@
     --fw-lg: 600;
     --fw-xl: 700;
     /* font-family: ; */
-    --font-main: 'Hind Siliguri', sans-serif;
-    --font-primary: 'Open Sans', sans-serif;
+    --font-main: 'Hind Siliguri';
+    --font-primary: 'Open Sans';
     /* color */
     --color-main: #232323;
     --color-attract: #9E3040;
@@ -957,7 +957,7 @@ footer ul li a:hover::after {
     }
 
     .explore-space {
-        padding: 0;
+        padding: 183px 28px 0px 48px;
     }
 
     .w-457 {
